@@ -28,8 +28,8 @@ defineProps({
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: aliceblue;
 }
-
 .image-wrapper {
   width: 100%;
   height: 180px;
