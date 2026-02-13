@@ -26,6 +26,9 @@ const ingredients = ref([
 </script>
 
 <style scoped>
+body{
+  background-image: "/Background.png";
+}
 img {
   width: 600px;
   height: auto;
