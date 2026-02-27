@@ -1,14 +1,14 @@
 <template>
     <div>
-        <h1>Choose your noodle type: Udon, or Soba?</h1>
-        <RouterLink to="/tonkotsu-base">
+        <h1>You chose the shoyu base! Choose your noodle type: Udon, or Soba?</h1>
+        <RouterLink to="/shoyu-udon">
             <button>
-                <img src="/TonkotsuBase.png" alt="">
+                <img src="/ShoyuUdon.png" alt="">
             </button>
         </RouterLink>
-        <RouterLink to="/shoyu-base">
+        <RouterLink to="/shoyu-soba">
             <button>
-                <img src="/ShoyuBase.png" alt="">
+                <img src="/ShoyuSoba.png" alt="">
             </button>
         </RouterLink>
     </div>
