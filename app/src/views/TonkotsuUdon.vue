@@ -5,15 +5,20 @@
       <img src="/TonkotsuUdon.png" alt="Empty Bowl Img Holder" />
     </div>
 
-    <div class="overlayImgDiv">
-      <img
-        v-for="(ingredient, index) in placedIngredients"
-        :key="ingredient.name + index"
-        :src="ingredient.img"
-        :alt="ingredient.name"
-        class="overlayImage"
-      />
-    </div>
+    <div class="bowlWrapper">
+
+  <img
+    v-for="(ingredient, index) in placedIngredients"
+    :key="ingredient.name + index"
+    :src="ingredient.img"
+    :alt="ingredient.name"
+    class="overlayImage"
+    :style="{
+      top: ingredient.top,
+      left: ingredient.left
+    }"
+  />
+</div>
 
     <div class="ingredientsList">
       <IngredientCard
@@ -31,10 +36,10 @@
 import { ref } from 'vue'
 import IngredientCard from '@/components/IngredientCard.vue'
 const ingredients = ref([
-  { name: 'Egg', img: '/Egg.png', price: '$2' },
-  { name: 'Ham', img: '/Ham.png', price: '$2' },
-  { name: 'Narutomaki', img: '/Narutomaki.png', price: '$2' },
-  { name: 'Seaweed', img: '/Seaweed.png', price: '$2' },
+  { name: 'Egg', img: '/Egg.png', price: '$2', top: '-405px', left: '60px' },
+  { name: 'Ham', img: '/Ham.png', price: '$2', top: '-370px', left: '250px' },
+  { name: 'Narutomaki', img: '/Narutomaki.png', price: '$2', top: '-400px', left: '380px' },
+  { name: 'Seaweed', img: '/Seaweed.png', price: '$2', top: '-240px', left: '460px' },
 ])
 
 const placedIngredients = ref([])
@@ -65,12 +70,14 @@ img {
   display: block;
   margin-top: 20px;
 }
+.bowlWrapper {
+  position: relative;
+  width: 600px;
+}
+
 .overlayImage {
   position: absolute;
-  left: 640px;
-  top: 210px;
-
-  width: 175px;
+  width: 160px;
 }
 .container {
   display: flex;
