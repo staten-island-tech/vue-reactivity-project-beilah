@@ -15,7 +15,8 @@
     class="overlayImage"
     :style="{
       top: ingredient.top,
-      left: ingredient.left
+      left: ingredient.left,
+      width: ingredient.width
     }"
   />
 </div>
@@ -37,9 +38,9 @@ import { ref } from 'vue'
 import IngredientCard from '@/components/IngredientCard.vue'
 const ingredients = ref([
   { name: 'Egg', img: '/Egg.png', price: '$2', top: '-405px', left: '60px' },
-  { name: 'Ham', img: '/Ham.png', price: '$2', top: '-370px', left: '250px' },
-  { name: 'Narutomaki', img: '/Narutomaki.png', price: '$2', top: '-400px', left: '380px' },
-  { name: 'Seaweed', img: '/Seaweed.png', price: '$2', top: '-240px', left: '460px' },
+  { name: 'Ham', img: '/Ham.png', price: '$2', top: '-370px', left: '230px', width: '200px'},
+  { name: 'Narutomaki', img: '/Narutomaki.png', price: '$2', top: '-420px', left: '450px', width: '120px' },
+  { name: 'Seaweed', img: '/Seaweed.png', price: '$2', top: '-500px', left: '380px', width: '170px' },
 ])
 
 const placedIngredients = ref([])
