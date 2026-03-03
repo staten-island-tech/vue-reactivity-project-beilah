@@ -6,25 +6,24 @@
     </div>
 
     <div class="bowlWrapper">
-
-  <img
-    v-for="(ingredient, index) in placedIngredients"
-    :key="ingredient.name + index"
-    :src="ingredient.img"
-    :alt="ingredient.name"
-    class="overlayImage"
-    :style="{
-      top: ingredient.top,
-      left: ingredient.left,
-      width: ingredient.width
-    }"
-  />
-</div>
+      <img
+        v-for="(ingredient, index) in placedIngredients"
+        :key="ingredient.name + index"
+        :src="ingredient.img"
+        :alt="ingredient.name"
+        class="overlayImage"
+        :style="{
+          top: ingredient.top,
+          left: ingredient.left,
+          width: ingredient.width,
+        }"
+      />
+    </div>
 
     <div class="ingredientsList">
       <IngredientCard
         class="ingredientCard"
-        @click="addIngredient(ingredient), removeBtn(ingredient)"
+        @click="(addIngredient(ingredient), removeBtn(ingredient))"
         v-for="ingredient in ingredients"
         :key="ingredient.name + index"
         :ingredient="ingredient"
@@ -38,9 +37,23 @@ import { ref } from 'vue'
 import IngredientCard from '@/components/IngredientCard.vue'
 const ingredients = ref([
   { name: 'Egg', img: '/Egg.png', price: '$2', top: '-405px', left: '60px' },
-  { name: 'Ham', img: '/Ham.png', price: '$2', top: '-370px', left: '230px', width: '200px'},
-  { name: 'Narutomaki', img: '/Narutomaki.png', price: '$2', top: '-420px', left: '450px', width: '120px' },
-  { name: 'Seaweed', img: '/Seaweed.png', price: '$2', top: '-500px', left: '380px', width: '170px' },
+  { name: 'Ham', img: '/Ham.png', price: '$2', top: '-370px', left: '230px', width: '200px' },
+  {
+    name: 'Narutomaki',
+    img: '/Narutomaki.png',
+    price: '$2',
+    top: '-420px',
+    left: '450px',
+    width: '120px',
+  },
+  {
+    name: 'Seaweed',
+    img: '/Seaweed.png',
+    price: '$2',
+    top: '-500px',
+    left: '380px',
+    width: '170px',
+  },
 ])
 
 const placedIngredients = ref([])

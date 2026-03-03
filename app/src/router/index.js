@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MakeRamen from '@/views/MakeRamen.vue'
 import RamenBase from '@/views/RamenBase.vue'
 import TonkotsuBase from '@/views/TonkotsuBase.vue'
 import ShoyuBase from '@/views/ShoyuBase.vue'
@@ -45,11 +44,6 @@ const router = createRouter({
       path: '/shoyu-soba',
       name: 'shoyuSoba',
       component: ShoyuSoba,
-    },
-    {
-      path: '/make-ramen',
-      name: 'home',
-      component: MakeRamen,
     },
   ],
 })
