@@ -65,6 +65,17 @@ function removeBtn(ingredient) {}
 </script>
 
 <style>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  animation: fadeIn 1s ease forwards;
+}
 h1 {
   color: white;
   font-size: 50px;
