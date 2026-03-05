@@ -30,6 +30,7 @@
 }
 
 div {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 100%;
   margin: auto;
   text-align: center;
@@ -37,6 +38,7 @@ div {
 }
 
 h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   width: 100%;
   margin-top: 120px;

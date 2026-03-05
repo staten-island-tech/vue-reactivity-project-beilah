@@ -77,6 +77,7 @@ function removeBtn(ingredient) {}
   animation: fadeIn 1s ease forwards;
 }
 h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   font-size: 50px;
   width: 400px;
@@ -125,6 +126,7 @@ div {
   padding: 16px;
 }
 .card {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: 1px solid #ccc;
   padding: 12px;
   margin-bottom: 12px;

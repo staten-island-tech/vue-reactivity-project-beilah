@@ -4,12 +4,12 @@
           Choose your noodle type: Udon, or Soba?</h1>
         <RouterLink to="/tonkotsu-udon">
             <button>
-                <img src="/TonkotsuUdon.png" alt="">
+                <img src="/TonkotsuUdon.png" alt="Tonkotsu soup base with udon noodles">
             </button>
         </RouterLink>
         <RouterLink to="/tonkotsu-soba">
             <button>
-                <img src="/TonkotsuSoba.png" alt="">
+                <img src="/TonkotsuSoba.png" alt="Tonkotsu soup base with soba noodles">
             </button>
         </RouterLink>
     </div>
@@ -37,6 +37,7 @@ div {
 }
 
 h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   width: 100%;
   margin-top: 120px;

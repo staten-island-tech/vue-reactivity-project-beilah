@@ -5,12 +5,12 @@
             Choose your ramen base here: Tonkotsu, or Shoyu?</h1>
         <RouterLink to="/tonkotsu-base">
             <button>
-                <img src="/TonkotsuBase.png" alt="">
+                <img src="/TonkotsuBase.png" alt="Tonkotsu Base">
             </button>
         </RouterLink>
         <RouterLink to="/shoyu-base">
             <button>
-                <img src="/ShoyuBase.png" alt="">
+                <img src="/ShoyuBase.png" alt="Shoyu Base">
             </button>
         </RouterLink>
         
@@ -36,7 +36,7 @@ div {
   margin: auto;
   text-align: center;
   animation: fadeIn 1s ease forwards;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
