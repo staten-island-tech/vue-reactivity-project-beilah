@@ -23,7 +23,7 @@
     <div class="ingredientsList">
       <IngredientCard
         class="ingredientCard"
-        @click="(addIngredient(ingredient), removeBtn(ingredient))"
+        @click="(addIngredient(ingredient))"
         v-for="ingredient in ingredients"
         :key="ingredient.name + index"
         :ingredient="ingredient"
@@ -59,7 +59,9 @@ const ingredients = ref([
 const placedIngredients = ref([])
 
 function addIngredient(ingredient) {
-  placedIngredients.value.push(ingredient)
+  if(placedIngredients.value.find(ing => ing.name === ingredient.name)) return;
+    placedIngredients.value.push(ingredient);
+  
 }
 function removeBtn(ingredient) {}
 </script>
